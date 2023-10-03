@@ -1,0 +1,71 @@
+﻿<Page x:Class="FirstAppYacenko.Pages.PagePR6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FirstAppYacenko.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PagePR6">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="Задание 6:  "
+                       Style="{StaticResource TxtStyleTaskPR}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Grid.Row="1">
+            <ListBox Name="LstPR6Int"
+                     Width="500" Height="190"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Grid.Row="2">
+            <TextBlock Name="TxbRez"
+                       Text="Количество пробелов: "
+                       Style="{StaticResource TxtStyleResultPR}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Grid.Row="3">
+            <Button Name="BtnLFFPR6"
+                    Content="Список из файла"
+                    Style="{StaticResource BtnStyle}"
+                    Margin="0 0 10 0"
+                    Click="BtnLFFPR6_Click"/>
+            <Button Name="BtnPR6Rez"
+                    Content="Результат"
+                    Style="{StaticResource BtnStyle}"
+                    Margin="0 0 10 0"
+                    Click="BtnPR6Rez_Click"/>
+            <Button Name="BtnPR6Clear"
+                    Content="Очистить"
+                    Style="{StaticResource BtnStyle}"
+                    Margin="0 0 10 0"
+                    Click="BtnPR6Clear_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Grid.Row="4">
+            <Button Name="BtnPR6Back"
+                    Content="Назад"
+                    Style="{StaticResource BtnStyle}"
+                    Margin="0 0 10 0"
+                    Click="BtnPR6Back_Click"/>
+            <Button Name="BtnPR6Next"
+                    Content="Далее"
+                    Style="{StaticResource BtnStyle}"
+                    Margin="0 0 10 0"
+                    Click="BtnPR6Next_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

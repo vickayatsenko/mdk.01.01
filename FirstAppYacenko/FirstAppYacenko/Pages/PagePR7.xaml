@@ -1,0 +1,60 @@
+﻿<Page x:Class="FirstAppYacenko.Pages.PagePR7"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FirstAppYacenko.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PagePR7">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="Задание: "
+               Style="{StaticResource TxtStyleTaskPR}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+            Orientation="Vertical"
+            HorizontalAlignment="Center">
+            <TextBlock Text="Результат: "
+               Style="{StaticResource TxtStyleResultPR}"/>
+            <ListBox Name="LstPR7Result"
+             Margin="5"
+             Height="150"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Grid.Row="2">
+            <Button Name="BtnPR7Result"
+            Content="Результат"
+            Style="{StaticResource BtnStyle}"
+            Margin="0 0 10 0"
+            Click="BtnPR7Result_Click"/>
+            <Button Name="BtnPR7Clear"
+            Content="Очистить"
+            Style="{StaticResource BtnStyle}"
+            Margin="0 0 10 0"
+            Click="BtnPR7Clear_Click"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Grid.Row="4">
+            <Button Name="BtnPR7Back"
+            Content="Назад"
+            Style="{StaticResource BtnStyle}"
+            Margin="0 0 10 0"
+            Click="BtnPR7Back_Click"/>
+            <Button Name="BtnPR7Next"
+            Content="Далее"
+            Style="{StaticResource BtnStyle}"
+            Margin="0 0 10 0"
+            Click="BtnPR7Next_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
